@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#F2F2F2">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="@android:color/white"
+			android:layout_margin="@dimen/_5sdp">
+
+			<EditText
+				android:id="@+id/edt_search"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:hint="@string/hint_search"
+				android:paddingLeft="@dimen/_15sdp"
+				android:singleLine="true"/>
+
+			<Button
+				android:id="@+id/btn_search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/txt_search"
+				android:background="@color/colorPrimary"
+				android:textColor="@android:color/white"/>
+
+		</LinearLayout>
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/rec_video_thumb"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</LinearLayout>
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone"/>
+
+</RelativeLayout>

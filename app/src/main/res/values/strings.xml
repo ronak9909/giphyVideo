@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GiphyVideo</string>
+
+
+    <string name="hint_search">Search video here</string>
+    <string name="txt_search">Search</string>
+
+</resources>
